@@ -1,0 +1,166 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    border: 2px solid black;
+    width: 500px;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+h1 {
+    width: 100%;
+    text-align: center;
+}
+
+hr {
+    border: 1px solid black;
+}
+
+#saldo-box, #valores-box, form, #listaDescricoes-box {
+    width: 100%;
+}
+
+#saldo-box {
+    display: flex;
+    font-size: xx-large;
+    border: 2px solid black;
+    border-radius: 10px;
+    justify-content: space-around;
+}
+
+#valores-box {
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#receita-box {
+    background-color: rgb(0, 200, 0);
+    width: 49%;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+#despesas-box {
+    background-color: rgb(200, 0, 0);
+    width: 49%;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+#valores-box>div {
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+#valores-box>div>h3 {
+    width: 100%;
+    text-align: center;
+    margin: 10px 0 5px 0;
+}
+
+#valores-box>div>span {
+    width: 100%;
+    text-align: end;
+    font-size: larger;
+    margin: 0 10px 5px 0;
+}
+
+.form-subtitle {
+    margin: 10px 10px 0 0;
+}
+
+form>input[type=text], form>input[type=number] {
+    width: 100%;
+    border-radius: 5px;
+    padding: 6px 6px 6px 15px;
+    font-size: medium;
+    margin-bottom: 10px;
+}
+
+form>input[type=radio] {
+    cursor: pointer;
+}
+
+#submit-box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+
+#submit-box>button {
+    width: 250px;
+    height: 40px;
+    background-color: rgb(15, 15, 15);
+    color: white;
+    border: none;
+    border-radius: 3px;
+    transition: all 0.3s ease-in-out;
+}
+
+#submit-box>button:hover {
+    transform: scale(1.05);
+}
+
+#descricoes{
+    width: 100%;
+    padding: 0;
+}
+
+.receita, .despesa {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    padding: 5px;
+    margin-bottom: 5px;
+    
+}
+
+.receita {
+    border-right: 3px solid rgb(0, 200, 0);
+}
+
+.despesa {
+    border-right: 3px solid rgb(200, 0, 0);
+}
+
+.descricao {
+    width: 80%;
+    align-self: start;
+    word-break: break-all;
+}
+
+.value {
+    width: 20%;
+}
+
+.deleteButton {
+    margin: 0 10px;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}

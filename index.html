@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gastos</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main>
+        <h1>RECEITA E DESPESAS</h2>
+        <div id="saldo-box">
+            SALDO R$
+            <span id="saldo">0,00</span>
+        </div>
+
+        <div id="valores-box">
+            <div id="receita-box">
+                <h3>RECEITA</h3>
+                <span id="receita">R$ 0,00</span>
+            </div>
+            <div id="despesas-box">
+                <h3>DESPESAS</h3>
+                <span id="despesas">R$ 0,00</span>
+            </div>
+        </div>
+        <form>
+            <h3 class="form-subtitle">DESCRIÇÃO</h3>
+            <input type="text" id="descricao" placeholder="INFORME A DESCRIÇÃO" required>
+            <h3 class="form-subtitle">VALOR</h3>
+            <input type="number" id="valor" min="0" step="0.01" placeholder="INFORME O VALOR" required>
+
+            <h3 class="form-subtitle">TIPO</h3>
+            <input type="radio" name="tipo" value="receita" id="receita" required>
+            <label for="receita">RECEITA</label>
+            <input type="radio" name="tipo" value="despesa" id="despesa" required>
+            <label for="despesa">DESPESA</label>
+            <hr>
+            <div id="submit-box">
+                <button value="submit">ADICIONAR</button>
+            </div>
+            <hr>
+        </form>
+        <div id="listaDescricoes-box">
+            <h1>LISTA DESCRIÇÃO</h1>
+            <ul id="descricoes"></ul>
+        </div>
+        
+    </main>
+</body>
+</html>
