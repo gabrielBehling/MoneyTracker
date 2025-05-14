@@ -48,7 +48,7 @@ Um aplicativo web moderno para gerenciamento de finanças pessoais, desenvolvido
 
 1. Clone o repositório:
 ```bash
-git clone [url-do-repositório]
+git clone https://github.com/gabrielBehling/MoneyTracker
 ```
 
 2. Entre na pasta do projeto:
